@@ -5,61 +5,61 @@ const ComponentMain = () => {
     return (
         <div className="row">
             <div className="col-3 center">
-                <ComponentBox span={"C"}/>
+                <ComponentBox span={"C"} cssClass={`btn-others`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"+/-"}/>
+                <ComponentBox span={"+/-"} cssClass={`btn-others`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"%"}/>
+                <ComponentBox span={"%"} cssClass={`btn-others`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"/"}/>
+                <ComponentBox span={"/"} cssClass={`btn-operators`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"7"}/>
+                <ComponentBox span={"7"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"8"}/>
+                <ComponentBox span={"8"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"9"}/>
+                <ComponentBox span={"9"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"*"}/>
+                <ComponentBox span={"*"} cssClass={`btn-operators`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"4"}/>
+                <ComponentBox span={"4"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"5"}/>
+                <ComponentBox span={"5"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"6"}/>
+                <ComponentBox span={"6"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"-"}/>
+                <ComponentBox span={"-"} cssClass={`btn-operators`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"1"}/>
+                <ComponentBox span={"1"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"2"}/>
+                <ComponentBox span={"2"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"3"}/>
+                <ComponentBox span={"3"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"+"}/>
+                <ComponentBox span={"+"} cssClass={`btn-operators`}/>
             </div>
-            <div className="col-6 center center-zero">
-                <ComponentBox span={"0"}/>
-            </div>
-            <div className="col-3 center">
-                <ComponentBox span={","}/>
+            <div className="col-6 center">
+                <ComponentBox span={"0"} cssClass={`btn-numbers`}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"="}/>
+                <ComponentBox span={","} cssClass={`btn-numbers`}/>
+            </div>
+            <div className="col-3 center">
+                <ComponentBox span={"="} cssClass={`btn-operators`}/>
             </div>
         </div>
     );

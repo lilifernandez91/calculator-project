@@ -4,9 +4,12 @@ import ComponentScreen from "../components/ComponentScreen";
 
 export default function Home() {
   return (
-    <div className="main-styles-container">
-      <ComponentScreen />
-      <ComponentMain />
+    <div className="container">
+      <div className="main-styles-container">
+        <ComponentScreen />
+        <ComponentMain />
+      </div>
     </div>
+
   )
 }

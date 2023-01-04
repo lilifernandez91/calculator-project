@@ -1,9 +1,18 @@
 .center{
    text-align: center; 
    margin-top: 36px;
-}
+   font-size: 18px;
 
-.center-zero{
-   padding-left: 129px;
+   .btn-others{
+      background-color: aqua;
+   }
+
+   .btn-operators{
+      background-color: rgb(205, 165, 55);
+   }
+
+   .btn-numbers{
+      background-color: #b7b4bc;
+   }
 }
 

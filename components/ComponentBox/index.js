@@ -1,7 +1,7 @@
 const ComponentBox = (props) => {
     return (
-        <div>
-            <span>{props.span}</span>
+        <div className={`${props.cssClass} box`}>
+            <span >{props.span}</span>
         </div>
     );
 }
