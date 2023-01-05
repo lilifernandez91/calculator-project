@@ -1,6 +1,7 @@
 const ComponentBox = (props) => {
+
     return (
-        <div className={`${props.cssClass} box`}>
+        <div className={`${props.cssClass} box`} onClick={() => props.updateScreen(props.span)}>
             <span >{props.span}</span>
         </div>
     );
