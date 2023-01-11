@@ -5,14 +5,14 @@ const ComponentMain = (props) => {
 
     return (
         <div className="row">
-            <div className="col-3 center">
-                <ComponentBox span={"C"} cssClass={`btn-others`} />
+            <div className="col-6 center">
+                <ComponentBox span={"Borrar"} cssClass={`btn-others delete`} updateScreen={props.updateScreen}/>
             </div>
-            <div className="col-3 center">
+            {/* <div className="col-3 center">
                 <ComponentBox span={"+/-"} cssClass={`btn-others`} updateScreen={props.updateScreen}/>
-            </div>
+            </div> */}
             <div className="col-3 center">
-                <ComponentBox span={"%"} cssClass={`btn-others`} updateScreen={props.updateScreen}/>
+                {/* <ComponentBox span={"%"} cssClass={`btn-operators`} updateScreen={props.updateScreen}/> */}
             </div>
             <div className="col-3 center">
                 <ComponentBox span={"/"} cssClass={`btn-operators`} updateScreen={props.updateScreen}/>
@@ -60,7 +60,7 @@ const ComponentMain = (props) => {
                 <ComponentBox span={","} cssClass={`btn-numbers`} updateScreen={props.updateScreen}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"="} cssClass={`btn-operators`} updateScreen={props.updateScreen}/>
+                <ComponentBox span={"="} cssClass={`btn-operators`} updateScreen={props.handleResult}/>
             </div>
         </div>
     );
