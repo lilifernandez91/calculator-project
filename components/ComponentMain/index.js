@@ -27,7 +27,7 @@ const ComponentMain = (props) => {
                 <ComponentBox span={"9"} cssClass={`btn-numbers`} updateScreen={props.updateScreen}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={"*"} cssClass={`btn-operators`} updateScreen={props.updateScreen}/>
+                <ComponentBox span={"x"} cssClass={`btn-operators`} updateScreen={props.updateScreen}/>
             </div>
             <div className="col-3 center">
                 <ComponentBox span={"4"} cssClass={`btn-numbers`} updateScreen={props.updateScreen}/>
@@ -57,7 +57,7 @@ const ComponentMain = (props) => {
                 <ComponentBox span={"0"} cssClass={`btn-numbers`} updateScreen={props.updateScreen}/>
             </div>
             <div className="col-3 center">
-                <ComponentBox span={","} cssClass={`btn-numbers`} updateScreen={props.updateScreen}/>
+                <ComponentBox span={"."} cssClass={`btn-numbers`} updateScreen={props.updateScreen}/>
             </div>
             <div className="col-3 center">
                 <ComponentBox span={"="} cssClass={`btn-operators`} updateScreen={props.handleResult}/>

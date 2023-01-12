@@ -32,20 +32,20 @@ const cleanScreen = () => {
 
 const handleResult = () => {
     if (operator === "+") {
-      const suma = parseInt(firstNumber) + parseInt(secondNumber);
-      setScreen(suma);
+      const suma = parseFloat(firstNumber) + parseFloat(secondNumber);
+      setScreen(suma.toFixed(2));
       setFirstNumber(suma.toString());
     } else if (operator === "-") {
-      const resta = parseInt(firstNumber) - parseInt(secondNumber);
-      setScreen(resta);
+      const resta = parseFloat(firstNumber) - parseFloat(secondNumber);
+      setScreen(resta.toFixed(2));
       setFirstNumber(resta.toString());
-    } else if (operator === "*") {
-      const multiplicacion = parseInt(firstNumber) * parseInt(secondNumber);
-      setScreen(multiplicacion);
+    } else if (operator === "x") {
+      const multiplicacion = parseFloat(firstNumber) * parseFloat(secondNumber);
+      setScreen(multiplicacion.toFixed(2));
       setFirstNumber(multiplicacion.toString());
     } else if (operator === "/") {
-      const division = parseInt(firstNumber) / parseInt(secondNumber);
-      setScreen(division);
+      const division = parseFloat(firstNumber) / parseFloat(secondNumber);
+      setScreen(division.toFixed(2));
       setFirstNumber(division.toString());
     } 
     setSecondNumber("");
@@ -53,13 +53,13 @@ const handleResult = () => {
   }
 
   const isAValidNumber = (str) => {
-    if(str === "0" || str === "1" || str === "2" || str === "3" || str === "4" || str === "5" || str === "6" || str === "7" || str === "8" || str === "9"){
+    if(str === "." || str === "0" || str === "1" || str === "2" || str === "3" || str === "4" || str === "5" || str === "6" || str === "7" || str === "8" || str === "9"){
       return true;
     }
   }
 
   const isoperator = (str) => {
-   if(str === "+" || str === "-" || str === "*" || str === "/"){
+   if(str === "+" || str === "-" || str === "x" || str === "/"){
      return true;
    }
   }
