@@ -1,6 +1,5 @@
 import ComponentBox from "../ComponentBox";
 
-
 const ComponentMain = (props) => {
 
     return (
